@@ -1,7 +1,4 @@
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class MapCollection {
     public static void main(String[] args) {
@@ -17,13 +14,22 @@ public class MapCollection {
         System.out.println(myHashMap.replace("Name","Aaryan","Aruna"));
         System.out.println(myHashMap);
 
-        Set<Map.Entry<String, String>> mySet = myHashMap.entrySet();
+//        Set<Map.Entry<String, String>> mySet = myHashMap.entrySet();
 //        Iterator it = mySet.iterator();
-        while (mySet.iterator().hasNext()){
-            System.out.println(mySet.);
-        }
+//        while (it.hasNext()){
+//            System.out.println(it.next());
+//        }
 
 
+
+        List<String> d = new ArrayList<>(myHashMap.values());
+        System.out.println(d);
+
+        System.out.println("****** HashTable ******");
+        Hashtable<String, String> myTable = new Hashtable<>();
+        myTable.put("Name","Mahesh");
+        myTable.put("Place", "Bellevue");
+        System.out.println(myTable);
 
     }
 }
