@@ -1,4 +1,4 @@
-package javapractice2026;
+package javapractice2026.day2;
 
 public class Hello {
     static void main() {
